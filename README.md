@@ -43,10 +43,34 @@ oc new-app myapp
 oc expose svc/myapp
 ```
 
-## 8. Get the host name for your route and navigate to it:
+## 8. Get the host name for your route and navigate to it
 
 ```sh
 oc get route myapp
+```
+
+## 9. Build and deploy application using Dockerfile in single command
+
+```sh
+oc new-app --name=testapp centos:centos7~https://github.com/ecwpz91/HelloDockerfile.git --strategy=docker
+```
+
+## 10. Create service
+
+```sh
+oc expose dc/testapp --port=8080
+```
+
+## 11. Expose route to application
+
+```sh
+oc expose svc/testapp
+```
+
+## 12. Get the host name for your route and navigate to it
+
+```sh
+oc get route testapp
 ```
 
 # References
