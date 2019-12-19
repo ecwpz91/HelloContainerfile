@@ -45,6 +45,12 @@ oc new-app myapp
 oc expose svc/myapp
 ```
 
+## Get the host name for your route and navigate to it:
+
+```sh
+oc get route myapp
+```
+
 # References
 
 https://docs.openshift.com/container-platform/3.11/dev_guide/dev_tutorials/binary_builds.html#binary-builds-private-code
