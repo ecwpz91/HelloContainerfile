@@ -16,7 +16,7 @@ cd HelloDockerfile
 ## 3. Create a new project for you application
 
 ```sh
-oc new-project hellodockerfile --display-name="Hello Dockerfile Demo"
+oc new-project hellodockerfile --display-name="HelloDockerfile Demo"
 ```
 
 ## 4. Create a new build for your application
