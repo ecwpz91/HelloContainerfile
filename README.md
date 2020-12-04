@@ -4,19 +4,19 @@
 ## 1. Clone repo locally
 
 ```sh
-git clone https://github.com/ecwpz91/HelloDockerfile.git
+git clone https://github.com/ecwpz91/HelloContainerfile.git
 ```
 
 ## 2. Change to directory
 
 ```sh
-cd HelloDockerfile
+cd HelloContainerfile
 ```
 
 ## 3. Create a new project for you application
 
 ```sh
-oc new-project hellodockerfile --display-name="HelloDockerfile Demo"
+oc new-project hellocontainerfile --display-name="HelloContainerfile Demo"
 ```
 
 ## 4. Create a new build for your application
@@ -52,7 +52,7 @@ oc get route myapp
 ## 9. Build and deploy application using Dockerfile in single command
 
 ```sh
-oc new-app --name=testapp centos:centos7~https://github.com/ecwpz91/HelloDockerfile.git --strategy=docker
+oc new-app --name=testapp centos:centos7~https://github.com/ecwpz91/HelloContainerfile.git --strategy=docker
 ```
 
 ## 10. Create service
