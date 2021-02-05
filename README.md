@@ -52,7 +52,7 @@ oc get route myapp
 ## 9. Build and deploy application using Dockerfile in single command
 
 ```sh
-oc new-app --name=testapp centos:centos7~https://github.com/ecwpz91/HelloContainerfile.git --strategy=docker
+oc new-app --name=testapp ubi:latest~https://github.com/ecwpz91/HelloContainerfile.git --strategy=docker --as-deployment-config=true
 ```
 
 ## 10. Create service
