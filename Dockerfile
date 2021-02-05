@@ -1,4 +1,4 @@
-FROM centos:centos7
+FROM registry.redhat.io/ubi7/ubi:latest
 
 EXPOSE 8080
 
