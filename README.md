@@ -22,7 +22,7 @@ oc new-project hellocontainerfile --display-name="HelloContainerfile Demo"
 ## 4. Create a new build for your application
 
 ```sh
-oc new-build --strategy docker --binary --docker-image centos:centos7 --name myapp
+oc new-build --strategy docker --binary --docker-image registry.redhat.io/ubi7/ubi:latest --name myapp
 ```
 
 ## 5. Start a binary build using the local directory’s content
